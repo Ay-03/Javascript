@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Asistente de voz - NUI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Asistente de voz</h1>
+    <p id="textoPrincipal">Di ordenes como: <strong>"Rojo"</strong>, <strong>"Verde"</strong>, <strong>"Azul"</strong>, <strong>"Más grande"</strong>, <strong>"Más pequeño"</strong>, <strong>"Modo oscuro"</strong>, <strong>"Modo claro"</strong> o <strong>"Restablecer"</strong>.</p>
+    <button id="btnStart">Activar Microfono</button>
+    <p class="status" id="statusText">Estado: Inactivo</p>
+    <p>Ultimo comando detectado: <span id="commandText">-</span></p>
+    <p>Respuesta: <span id="responseText">-</span></p>
+
+    <button id="btnMas">Mas grande</button>
+    <button id="btnMenos">Mas pequeño</button>
+    <button id="btnOscuro">Modo oscuro</button>
+    <button id="btnClaro">Modo claro</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

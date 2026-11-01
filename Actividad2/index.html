@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de la compra por voz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>Lista de la compra</h1>
+    <p>Di: <strong>"añade leche"</strong>, <strong>"quita leche"</strong> o <strong>"vacía la lista"</strong>.</p>
+    <button id="btnStart">Activar Micrófono</button>
+    <p class="status" id="statusText">Estado: Inactivo</p>
+    <p>Último comando: <span id="commandText">-</span></p>
+    <p>Respuesta: <span id="responseText">-</span></p>
+
+    <input type="text" id="campoProducto" placeholder="Escribe un producto">
+    <button id="btnAnadir">Añadir</button>
+    <button id="btnQuitar">Quitar</button>
+    <button id="btnVaciar">Vaciar lista</button>
+
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
